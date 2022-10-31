@@ -1,0 +1,64 @@
+.container-docente {
+  width: 100%;
+}
+.title-docente {
+  width: 100%;
+  background-color: #08bde3;
+  padding: 1.2em;
+  text-align: center;
+}
+.title-docente p {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.container-img {
+  width: 100%;
+  padding: 20px 50px;
+  text-align: center;
+}
+.container-img img {
+  max-width: 85%;
+}
+
+.container-slider .card {
+  padding: 10px;
+}
+.card img {
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .title-docente p {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .container-slider {
+    padding-bottom: 20px;
+  }
+  .slick-dots {
+    bottom: -15px;
+  }
+  .slick-dots li button::before {
+    font-size: 15px;
+  }
+
+  .container-img {
+    width: 100%;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .container-img img {
+    max-width: 100%;
+  }
+  .card img {
+    width: 300px;
+    height: 350px;
+    object-fit: contain;
+    margin: auto;
+  }
+}

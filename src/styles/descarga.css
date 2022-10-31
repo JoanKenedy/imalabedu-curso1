@@ -1,0 +1,152 @@
+.container-download {
+  width: 100%;
+  background-color: #08bde3;
+  text-align: center;
+  padding: 1.2em;
+  position: relative;
+}
+.container-download p {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.4s, visibility 0.4s, transform 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 999;
+}
+.modal.open .cerrar {
+  color: #fff;
+  font-size: 2em;
+}
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.container-form {
+  width: 50%;
+  background-color: #fff;
+}
+.title-form {
+  background-color: #08bde3;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-form p {
+  color: #fff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+form p {
+  width: 90%;
+  margin: auto;
+  color: grey;
+}
+form input {
+  width: 90%;
+  padding: 15px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid gray;
+  margin: auto;
+}
+form button {
+  width: 30%;
+  background-color: #08bde3;
+  padding: 15px;
+  margin: auto;
+  border: none;
+  color: #fff;
+  font-size: 1.1em;
+}
+form button a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (max-width: 768px) {
+  .container-download p {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .modal.open .cerrar {
+    color: #fff;
+    font-size: 1.2em;
+  }
+  .container-form {
+    width: 90%;
+    background-color: #fff;
+  }
+  .title-form {
+    background-color: #08bde3;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .title-form p {
+    color: #fff;
+    font-size: 1em;
+    text-transform: capitalize;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+  form p {
+    width: 90%;
+    margin: auto;
+    color: grey;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  form input {
+    width: 90%;
+    padding: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid gray;
+    margin: auto;
+  }
+  form button {
+    width: 35%;
+    background-color: #08bde3;
+    padding: 15px;
+    margin: auto;
+    border: none;
+    color: #fff;
+    font-size: 1.1em;
+  }
+}

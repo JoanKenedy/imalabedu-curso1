@@ -1,0 +1,32 @@
+.container-flotantes {
+  width: 100%;
+  position: fixed;
+  bottom: 5vh;
+  z-index: 1000;
+  left: 93%;
+  display: flex;
+  flex-direction: column;
+}
+.container-flotantes a img {
+  max-width: 6%;
+  transition: 0.5s;
+}
+.container-flotantes a img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+@media (max-width: 767px) {
+  .container-flotantes a img {
+    max-width: 15%;
+    transition: 0.5s;
+  }
+  .container-flotantes {
+    width: 100%;
+    position: fixed;
+    bottom: 5vh;
+    z-index: 1000;
+    left: 83%;
+    display: flex;
+    flex-direction: column;
+  }
+}
